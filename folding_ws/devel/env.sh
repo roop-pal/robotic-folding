@@ -1,1 +1,0 @@
-/home/roop/Code/robotic-laundry-folding/folding_ws/devel/.private/catkin_tools_prebuild/env.sh
