@@ -36,6 +36,8 @@ We used ROS Kinetic for this project In
 To start, a MoveIt package 
 
 ## Progress
-Run `rostopic baxter_moveit_config move_group.launch right_electric_gripper:=false`
-`roslaunch baxter_moveit_config baxter_grippers.launch`
-`python fold.py 011310P0004.local`
+Run 
+- `roslaunch baxter_moveit_config move_group.launch`
+- `roslaunch baxter_interface joint_trajectory_action_server.py`
+- `python fold.py 011310P0004.local`
+- Check `src/mapped_keypoints.txt`
