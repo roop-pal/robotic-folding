@@ -43,6 +43,6 @@ Run
 - `source /opt/ros/kinetic/setup.bash`
 - `. baxter.sh`
    - `roslaunch baxter_moveit_config move_group.launch`
-   - `roslaunch baxter_interface joint_trajectory_action_server.py`
+   - `rosrun baxter_interface joint_trajectory_action_server.py`
    - `python fold.py 011310P0004.local`
 - Check `src/mapped_keypoints.txt`
