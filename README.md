@@ -46,3 +46,14 @@ Run
    - `rosrun baxter_interface joint_trajectory_action_server.py`
    - `python fold.py 011310P0004.local`
 - Check `src/mapped_keypoints.txt`
+
+# Simulation
+Fix baxter.sh's IP
+- `. baxter.sh sim`
+- `roslaunch baxter_gazebo baxter_world.launch`
+- `rosrun baxter_interface joint_trajectory_action_server.py`
+- `roslaunch baxter_moveit_config baxter_grippers.launch`
+   - run, then close
+   - run `roslaunch baxter_moveit_config move_group.launch`
+- try `roslaunch freenect_launch freenect.launch rgb_frame_id:=camera_rgb_optical_frame depth_frame_id:=camera_depth_optical_frame`
+- python fold.py localhost:11311
