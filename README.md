@@ -55,5 +55,5 @@ Fix baxter.sh's IP
 - `roslaunch baxter_moveit_config baxter_grippers.launch`
    - run, then close
    - run `roslaunch baxter_moveit_config move_group.launch`
-- try `roslaunch freenect_launch freenect.launch rgb_frame_id:=camera_rgb_optical_frame depth_frame_id:=camera_depth_optical_frame`
+- try `roslaunch openni2_launch openni2.launch`
 - python fold.py localhost:11311
